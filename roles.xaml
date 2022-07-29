@@ -1,0 +1,83 @@
+Please pay attention to this, doing a mistake might lead to very bad bugs
+name| is being used for /giverank
+adminlevel| is being used as identification for things,
+it needs to be unique for example value higher or equal to 2 
+will allow breaking blocks in worlds, MAKE SURE ADMINLEVELS ARENT SAME IN EACH RANK
+if u want to give ability to break blocks set it to higher than 2
+othewise u can go -1, -2, -3...
+prefix is something like `#@
+u can set it to whatever you want
+DONT ADD ANY more subscriber roles, they wont work!
+Subscriber commands are being added into current commands
+Subscriber cannot have a prefix
+ok one more time if u want to make a role with your own custom commands please use adminlevel less than 0
+and if you want to make a role which can bypass restrictions like break in all worlds use adminlevel higher than 2
+/giverank and some other dangerous commands are only obtainable if you are in creators list in config.json and have role with /giverank
+
+<START>
+name|subscriber
+adminlevel|none
+prefix|none
+commands|msgs,rs,setchat,jsb,ssb
+chatcolor|none
+<SPACE>
+name|player
+adminlevel|-2
+prefix|[ `1VIP `w] `1
+commands|help,buy,trade,renderworld,report,news,mods,go,kickall,pull,me,rules,status,r,rgo,warp,ban,time,a,msg,uba,sdb,g,radio,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2
+chatcolor|w
+<SPACE>
+name|mod
+adminlevel|0
+prefix|[ `#MOD `w] `#@
+commands|commands,ghost,clear,deletedcommand,buy,help,clearitem,rate,trade,renderworld,vsb,pay,news,mods,go,kickall,pull,me,rules,status,r,rgo,warp,time,a,msg,uba,sb,sdb,g,radio,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2
+chatcolor|4
+<SPACE>
+name|adm
+adminlevel|1
+prefix|[ `8ADMIN `w] `8@
+commands|commands,deletedcommand,magic,buy,help,clearitem,rate,trade,msgs,rs,report,ans,fakeban,pay,togglemod,news,msb,a,p,eff,ghost,mods,go,online,kickall,status,pull,me,warn,rules,r,rgo,warpto,warp,ssb,ban,pban,spk,mute,curse,time,msg,uba,info,infoex,nick,invis,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2
+chatcolor|2
+<SPACE>
+name|own
+adminlevel|2
+prefix|[ `9Owner `w] `9@
+commands|commands,deletedcommand,find,buy,magic,unbanip,help,trade,rate,clearitem,gemevent,msgs,rs,report,dsb,ans,fakeban,a,pay,item,togglemod,news,p,eff,ghost,mods,setchat,go,online,kickall,status,pull,me,warn,rules,r,rgo,item,warpto,warp,nuke,ssb,ban,pban,suspend,spk,unmute,mute,curse,time,uncurse,unban,msg,uba,gsm,info,infoex,banip,nick,invis,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2
+chatcolor|^
+<SPACE>
+name|found
+adminlevel|3
+prefix|[ `bFOUNDER `w] `b@
+commands|commands,deletedcommand,help,warpto,pull,clear,buy,find2,renderworld,rate,magic,unbanip,clearitem,help,trade,gemevent,fsb,msgs,rs,report,ans,a,fakeban,pay,logs,invalid,togglemod,news,p,eff,find,ghost,mods,setchat,go,online,kickall,status,pull,me,warn,rules,r,rgo,item,warpto,warp,nuke,ssb,ban,pban,suspend,unmute,mute,curse,time,uncurse,unban,msg,uba,gsm,info,infoex,banip,nick,invis,givegems,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2
+chatcolor|6
+<SPACE>
+name|dev
+adminlevel|4
+prefix|[ `4Deve`bloper`w ] `4@`b
+commands|command,deletedcommand,hclear,buy,find,give,item,special,ban,banall,banner,changeid,uncrash,carnival,find2,carnival2,night,growganoth,event,cook,money,fsb,rate,unbanip,buy,pay,logs,msg,ignore,logs,invalid,togglemod,news,p,eff,find,,ghost,mods,setchat,go,online,streaming,magic,online,renderworld,rate,rules,r,rgo,warp,nuke,ssb,ban,pban,unmute,mute,curse,time,uncurse,unban,msg,uba,gsm,info,infoex,nick,unbanip,banip,invis,givegems,givelevel,sb,schat,sdb,color,who,wave,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2,spk,weather,se,shy,grumpy,togglemod
+chatcolor|c
+<SPACE>
+name|cre
+adminlevel|5
+prefix|`c[ `9Creator`c ] @`b
+commands|commands,freezeall,spk,pull,help,clear,buy,pullall,clearitem,uncrash,ignore,hsb,unignore,hide,unequip,unsuspend,renderworld,nicked,deleteworld,v,giveitem,copyset,weather,deleteacc,saveall,blacklist,renderworld,banall,magic,demote,spawn,drop,help,infoex,trade,gemevent,osb,se,msgs,rs,unbanip,report,ans,logs,giverank,givetitle,givelevel,fakeban,pay,a,regenerate,deletedcommand,togglemod,news,p,eff,find,ghost,mods,setchat,stop,go,online,kickall,status,pull,me,warn,rules,r,rgo,item,warpto,warp,nuke,ssb,ban,pban,suspend,spk,unmute,mute,curse,time,uncurse,unban,msg,uba,gsm,info,infoex,banip,nick,invis,givegems,delstatus,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2,shy,grumpy
+chatcolor|5
+<SPACE>
+name|cocre
+adminlevel|6
+prefix|[ `cCo Creator `w] `c@
+commands|commands,deletedcommand,clear,buy,find2,renderworld,rate,magic,unbanip,clearitem,help,trade,gemevent,givetitle,givelevel,fsb,msgs,rs,report,ans,a,fakeban,pay,logs,invalid,togglemod,news,p,eff,find,ghost,mods,setchat,go,online,kickall,status,pull,me,warn,rules,r,rgo,item,warpto,warp,nuke,ssb,ban,pban,suspend,unmute,mute,curse,time,uncurse,unban,msg,uba,gsm,info,infoex,banip,nick,invis,givegems,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2,shy,grumpy,weather,c,pl,se,logs,pay,togglemod,money,event,carnival,carnival2,find2,magic2,growganoth,night
+chatcolor|9
+<SPACE>
+name|xnxx
+adminlevel|7
+prefix|[ `bXNXX `w] `b@`c
+commands|freezeall,spk,clear,roleprice,buy,pullall,clearitem,uncrash,ignore,hsb,unignore,hide,unequip,unsuspend,renderworld,nicked,deleteworld,vsb,osb,msb,v,giveitem,copyset,weather,deleteacc,saveall,blacklist,renderworld,banall,magic,demote,spawn,drop,help,infoex,trade,gemevent,osb,se,msgs,msg,rs,unbanip,report,ans,logs,giverank,givetitle,givelevel,fakeban,givegems,pay,a,regenerate,deletedcommand,retrieve,togglemod,news,p,eff,find,ghost,item,mods,setchat,stop,go,online,kickall,status,pull,me,warn,rules,r,rgo,warpto,warp,nuke,ssb,ban,pban,spk,suspend,spk,unmute,mute,curse,time,uncurse,unban,msg,uba,info,infoex,banip,nick,invis,delstatus,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2,dance,shy,grumpy,generatecode,gold,money,diamond,generate
+chatcolor|b
+<SPACE>
+name|ceo
+adminlevel|8
+prefix|`b[`5Ceo`b] `9@`c
+commands|freezeall,spk,clear,roleprice,buy,pullall,clearitem,uncrash,ignore,hsb,unignore,hide,unequip,unsuspend,renderworld,nicked,deleteworld,vsb,osb,msb,v,giveitem,copyset,weather,deleteacc,saveall,blacklist,renderworld,banall,magic,demote,spawn,drop,help,infoex,trade,gemevent,osb,se,msgs,msg,rs,unbanip,report,ans,logs,giverank,givetitle,givelevel,fakeban,givegems,pay,a,regenerate,deletedcommand,retrieve,togglemod,news,p,eff,find,ghost,item,mods,setchat,stop,go,online,kickall,status,pull,me,warn,rules,r,rgo,warpto,warp,nuke,ssb,ban,pban,spk,suspend,spk,unmute,mute,curse,time,uncurse,unban,msg,uba,info,infoex,banip,nick,invis,delstatus,jsb,sb,schat,sdb,g,radio,color,who,wave,dance,love,sleep,fp,yes,no,omg,idk,furious,rolleyes,fold,dab,sassy,dance2,dance,shy,grumpy,generatecode,gold,money,diamond,generate
+chatcolor|b
+<END>
